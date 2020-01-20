@@ -27,7 +27,7 @@ En France, la création d’un site de suivi de l’activité parlementaire, sim
 
 La plupart des exemples de scraping témoignent de la fragilité sur le moyen et long terme de cette technique d’obtention des données. Le journaliste Alexandre Léchenet avait réalisé en 2012 une enquête sur les dépassements d’honoraires des médecins (figure 5) pour _Le Monde _en extrayant les données du site ameli-direct.fr qui indique les tarifs habituellement exercés par chaque praticien. 
 
-![alt_text](chapitre 7/chapitre-70.png)
+![alt_text](chapitre7/chapitre-70.png)
 
 
 _Figure 5. Carte des dépassements d’honoraires à Paris réalisée à partir des données d’ameli-direct.fr_
@@ -35,7 +35,7 @@ _Figure 5. Carte des dépassements d’honoraires à Paris réalisée à partir 
 Ces données n’étaient pas mises à disposition par l’Assurance Maladie. Pour les extraire, Alexandre Léchenet a développé un robot qui contourne les différentes protections (cookie, moteur de recherche en Flash, URL unique pour chaque session…) mises en place sur le site[^8]. Quelques mois après la publication de la carte par _Le Monde _qui révélait qu’en moyenne à Paris les dépassements étaient de 15€ par consultation, l’Assurance Maladie a fait évoluer le site pour empêcher de nouvelles extractions. Lors d’une audition par la mission commune d’information du Sénat sur l’open data, Mathieu Escot, chargé de mission santé à UFC-Que Choisir, expliquait que l’association avait du extraire les données d’ameli-direct pour conduire une étude similaire sur les dépassements d’honoraires des cabinets médicaux. Selon lui, cette opération a coûté 20 000 € à l’association « soit l'équivalent du budget annuel du pôle santé de l'association pour l'achat de prestations extérieures[^9]. » Ces différentes protections, qui souvent visent d’abord à protéger des données personnelles ou sensibles, restreignent les capacités d’action de la société civile aux associations ou médias les plus aisés. Dans un tout autre domaine, la Cimade, une association de défense des réfugiés et du droit d’asile, a mis en place le site « A guichets fermés » pour dénoncer l’attente pour les formalités d’immigration devenue « un moyen de domination des personnes étrangères par la préfecture[^10]. » L’association constate depuis plusieurs années que la dématérialisation des procédures crée des « files d’attente invisibles » et renforce la précarité des personnes immigrées. Pour produire le site « A guichets fermés », l’association a développé des robots qui se rendent toutes les deux heures sur les sites de prise de rendez-vous en préfecture et extraient le délai d’attente pour les principales formalités. Ces données ont permis de montrer que, dans de nombreux départements, les personnes en situation régulière ne peuvent jamais prendre de rendez-vous alors que le délai pour un visa de long séjour s’étend de un à deux mois dans la même préfecture. Le site propose pour chaque préfecture des visualisations du délai d’attente pour les différentes procédures (_figure <$n:figure:agf)_, des graphiques qui peuvent être exportés à des fins de preuves dans des recours administratifs. 
 
 
-![alt_text](chapitre 7/chapitre-71.png)
+![alt_text](chapitre7/chapitre-71.png)
 
 
 _Figure 6 Exemple de délais dans une préfecture sur le site « A Guichets Fermés » de la Cimade_
@@ -50,7 +50,7 @@ L’exemple du décompte des soutiens à la proposition de loi s’opposant à l
 La troisième stratégie consiste à rassembler des informations disponibles mais éparses dans une base de données. Bien que l’ouverture des données soit aujourd’hui en France une obligation légale pour les acteurs investis d’une mission de service public, il est encore courant que des administrations publient des documents PDF dont il est très difficile d’extraire les données. Ce format a pour particularité de garantir une certaine forme d’immuabilité au document et de ne pas permettre à l’usager de le transformer aisément {Gitelman:2014vy}. Les documents publiés par les administrations comportent généralement des graphiques, des tableaux ou des indicateurs qui, pris isolément, ne permettent pas de refaire les calculs et de produire de nouvelles analyses. En 2015, j’avais accompagné le Syndicat de la Presse Indépendante d’Information en Ligne (SPIIL) dans une action de plaidoyer en faveur d’une meilleure répartition des aides à la presse pour les acteurs de la presse en ligne. Depuis les Etats généraux de la presse de 2008, le syndicat constate que les réformes s’enchainent pour accompagner le basculement vers le numériques des entreprises de presse alors que les usages sont déjà considérablement transformés. Dans les chiffres, les adhérents du SPIIL ont constaté que les aides étaient toujours en immense majorité réservées au support papier. A l’époque, les données disponibles ne concernaient pas l’ensemble des titres (seulement les 200 titres les plus aidés) ni l’ensemble des dispositifs (uniquement certaines aides directes). Pour disposer d’une vue d’ensemble des aides à la presse et objectiver son plaidoyer, le SPIIL a constitué une base de données estimant le montant de chacun des dispositifs d’aide à partir de sources très diverses (figure 7) : rapports annuels de performance établis par Bercy, rapport de la Cour des Comptes, budget de l’Etat, questions au gouvernement ou encore des estimations publiées par le SPIIL…
 
 
-![alt_text](chapitre 7/chapitre-72.png)
+![alt_text](chapitre7/chapitre-72.png)
 
 
 _Figure 7. Evolution annuelle des montants des différents dispositifs d’aides à la presse estimée par le SPIIL à partir de sources variées. _
@@ -61,7 +61,7 @@ Avec ces données, nous avons conçu des visualisations pour illustrer les messa
 
 
 
-![alt_text](chapitre 7/chapitre-73.png)
+![alt_text](chapitre7/chapitre-73.png)
 
 
 _Figure 8. Visualisation de données produites avec le SPIIL sur l’évolution des aides à la presse_
@@ -71,7 +71,7 @@ Quelques temps après la publication du panorama des aides à la presse, vraisem
 Dans tous les cas précédents, des informations publiques sont présentes sur le web mais sous une forme qui ne permet pas de constituer aisément une base de données. Pour certains sujets, les acteurs publics ne produisent aucune trace ou enregistrement des phénomènes étudiés ou au moins ne les rendent pas visibles. Pour parvenir quand même à constituer une base de données, une autre stratégie alternative consiste à structurer les informations publiées dans la presse ou dans la « littérature grise ». De mi-2013 à mi-2016, le projet Migrant Files est né du constat qu’il n’existait pas de base de données utilisables sur les personnes décédées en tentant de se réfugier en Europe. Une équipe de data journalistes européens a alors cherché à compléter les données existantes sur le sujet produites par United, qui fédère plus de 500 ONG européennes et Fortress Europe, créée par un journaliste italien[^14]. Pour y parvenir, les journalistes ont compilé des informations sur les décès des réfugiés lors de leur migration en s’appuyant sur des articles de presse, des rapports officiels ou encore des témoignages. Chaque décès est enregistré en indiquant la date, la localisation la plus précise possible, le nombre de personnes décédées ou disparues ainsi que les causes de la mort. Même si de nombreux migrants décèdent sans laisser de trace, les Migrant Files ont révélé que l’ampleur des décès des migrants étaient 53% plus élevée que ce qu’avait mesuré United et 70% de Fortress Europe. Ces données (figure 9)_ _ont été utilisées par des centaines de médias, chercheurs et journalistes pour évaluer le nombre de décès découlant des politiques européennes de répression et de rejets des réfugiés. 
 
 
-![alt_text](chapitre 7/chapitre-74.png)
+![alt_text](chapitre7/chapitre-74.png)
 
 
 _Figure 9. Carte des décès sur les routes de la migration issue du site themigrantsfiles.com_
@@ -80,7 +80,7 @@ Après avoir répertorié scrupuleusement plus de 30 000 décès en migration de
 
 Le projet de cartographie de la corruption de Transparency France a employé une stratégie similaire à celle des Migrant Files en s’appuyant sur la presse pour constituer des bases de données des condamnations pour corruption en France. Il vise à fournir des données objectives sur les caractéristiques de la corruption en France (ampleur, formes, récurrence, montants en jeu, sanctions) afin de procurer une meilleure compréhension du phénomène, de sensibiliser le grand public et d’informer à l’échelle locale sur les affaires de corruption au sein de sa ville, son département, sa région[^15]. Le site part du constat qu’il n’existe pas de base de données publique des condamnations prononcées par la justice française. Le casier judiciaire national fournit des statistiques uniquement sur le nombre de condamnations annuelles tout crime ou délit confondu ou sur le genre et l’origine des personnes visées. Pour y remédier, un bénévole de Transparency France, Raymond Bonomo, surveille les chroniques judiciaires de la presse locale en France pour détecter les affaires de corruption au sens défini par l’association qui étend la définition du code pénal à l’ensemble des atteintes à la probité et malversations financières dans les secteurs publics et privés[^16]. Chaque affaire répertoriée à partir de la presse comporte une description, une désignation anonyme des personnes ou entités impliquées, les dates et lieux des faits et de la condamnation, des tags et des références à l’article source dans la presse. 
 
-![alt_text](chapitre 7/chapitre-75.png)
+![alt_text](chapitre7/chapitre-75.png)
 
 
 _Figure 10. Cartographie de la corruption en France établie par Transparency France_
@@ -95,9 +95,9 @@ Dans les cas précédents, les données ont finalement pu être produites et tra
 On désigne couramment sous le terme de _crowdsourcing _l’acte de déléguer des actions à un grand nombre d’individus sous la forme d’un appel ouvert à la contribution {BurgerHelmchen:2011be}. Ces pratiques de contribution ouvertes ont été largement critiquées du fait qu’elles s’apparentent à un travail constitutif de la richesse de très nombreux services en ligne comme Tripadvisor, Foursquare ou Waze {Casilli:wh}. Le crowdsourcing peut aussi servir à des projets d’intérêt général afin de constituer des bases de données ouvertes. Dans l’ensemble des exemples qui suivent, les contributeurs se sont mobilisés pour collecter des données dans des projets à but non lucratif, souvent afin de servir une cause militante ou pour passion. En préparation des États Généraux de l’Alimentation de 2017, Greenpeace souhait montrer que nos enfants mangent au moins deux fois trop de viande dans les cantines scolaires mais ce constat cache une situation très hétérogène selon les villes. Certaines ont fait des efforts notables, d’autres continuent à servir viande et poisson tous les jours. Il n’existe toutefois aucune base de données au niveau national sur la composition des menus pour objectiver ce constat. Il y a bien quelques villes en France qui ont ouvert des données sur les menus des cantines comme Toulouse qui propose les menus quotidiens, les plats qui les composent et les denrées qui servent à leur élaboration. Pour obtenir les données dont nous avions besoin, j’ai travaillé avec Greenpeace pour concevoir une enquête contributive dans laquelle les sympathisants de l’ONG pourraient remonter les données concernant leurs écoles via une plateforme en ligne. En concevant cet outil, nous nous sommes rendus compte que les menus des cantines étaient effectivement publiés sur le web partout en France mais quasi exclusivement sous la forme de fichiers PDF. Dans ces menus, il n’y a pas de règle générale pour la présentation. Il n’était donc pas possible d’analyser automatiquement les fichiers pour déterminer la présence de viande ni de concevoir un outil qui indique automatiquement au contributeur quelle partie du fichier correspond à tel menu, à l’inverse du cas de Regards Citoyens où les déclarations d’intérêts étaient uniformisées, chaque partie du fichier correspondait à une section de la déclaration. Pour arriver à qualifier les menus des écoles primaires, nous avons conçu un site de contribution faisant appel aux sympathisants de l’association (figure 11).
 
 
-![alt_text](chapitre 7/chapitre-76.png)
+![alt_text](chapitre7/chapitre-76.png)
 
-![alt_text](chapitre 7/chapitre-77.png)
+![alt_text](chapitre7/chapitre-77.png)
 
 
 _Figure 11. Capture d’écran du site de contribution à la campagne de Greenpeace sur les menus des cantines _
@@ -105,7 +105,7 @@ _Figure 11. Capture d’écran du site de contribution à la campagne de Greenpe
 Entre septembre 2017 et février 2018, près de 8000 personnes ont collecté des données précieuses sur les menus de cantines des écoles primaires publiques en France : nombre de repas végétariens proposés, fréquence des options végétariennes, origine bio de la viande, intitulés des menus,…Grâce à cette grande enquête, Greenpeace a recueilli plus de 12 000 contributions couvrant plus de 3 200 villes et au moins 60 % de la population des écoliers. Bien qu’elles ne couvrent pas tout le territoire, ces données ont permis de montrer que 69 % des enfants sont obligés de manger de la viande ou du poisson presque tous les jours. Seuls 9 % des enfants mangent végétarien une fois par semaine et aucune ville n’atteint la préconisation de Greenpeace de deux repas végétariens par semaine. Les données issues de l’enquête ont été publiées sur data.gouv.fr et une carte a été produite pour consulter les résultats pour chacune des communes pour lesquelles des données ont été collectées (figure 12).
 
 
-![alt_text](chapitre 7/chapitre-78.png)
+![alt_text](chapitre7/chapitre-78.png)
 
 
 _Figure 12. Carte produite à l’issue de l’enquête de campagne de Greenpeace sur les menus dans les cantines._
@@ -113,7 +113,7 @@ _Figure 12. Carte produite à l’issue de l’enquête de campagne de Greenpeac
 Dans un tout autre domaine, on peut citer aussi comme exemple de crowdsourcing la campagne réalisée par l’association Regards Citoyens en juillet 2013 pour numériser les déclarations d’intérêts des parlementaires. Suite à la loi du 11 octobre 2013 sur la transparence de la vie publique, les parlementaires doivent déclarer leurs intérêts à la Haute Autorité pour la Transparence de la Vie Publique en charge de les contrôler et de les rendre publics afin que chaque citoyen puisse évaluer les possibles risques de conflits d'intérêts de ses représentants. La loi prévoit que les déclarations d'intérêts soient diffusées en open data mais, ayant pris ses fonctions en décembre 2013 et devant collecter l’ensemble des déclarations avant janvier 2014, la HATVP a préféré garder l’ancienne procédure de la commission pour la transparence qui nécessitait de remplir un formulaire papier plutôt que de remplir un formulaire en ligne[^17]. En juillet 2014, la HATVP a publié un jeu de données recensant les déclarations d'intérêts mais ces dernières étaient diffusées sous la forme de PDF images scannant les formulaires généralement manuscrits des parlementaires. Il était alors quasiment impossible d’extraire le texte manuscrit, indéchiffrable par la plupart des outils de reconnaissance de caractères (OCR). Regards Citoyens a ainsi développé une plateforme collaborative afin d’inviter les citoyens à saisir ces informations essentielles à la vie publique. Le site[^18] affichait d’un côté l’extrait de la déclaration du parlementaire et de l’autre une interface pour numériser chacun des éléments contenus dans la section du formulaire (figure 13). 
 
 
-![alt_text](chapitre 7/chapitre-79.png)
+![alt_text](chapitre7/chapitre-79.png)
 
 
 _Figure 13. Capture d’écran du site « Numérisons les intérêts des parlementaires » développé par Regards Citoyens_
@@ -122,7 +122,7 @@ Le travail était rendu particulièrement difficile par le fait que certaines d�
 
 
 
-![alt_text](chapitre 7/chapitre-710.jpg)
+![alt_text](chapitre7/chapitre-710.jpg)
 
 
 _Figure 14. Extrait de la déclaration d’intérêt de Xavier Bertrand_
